@@ -1,0 +1,79 @@
+body {
+    background: white;
+    color: ghostwhite;
+    font-family: monospace;
+}
+
+div.centre {
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+img.top {
+    vertical-align: middle;
+}
+
+.applicationHeader {
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.searchBox {
+    width: 350px;
+    height: 25px;
+}
+
+.movieWrapper {
+    width: 645px;
+    height: 361px;
+    float: left;
+}
+
+.movieInformationList {
+    width: 540px;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.overflow {
+    overflow: auto;
+}
+
+.borderBottom {
+    border-bottom: 1px solid lightcyan
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.youTubeMovie:hover {
+    background: darkgray;
+}
+
+div.centreMainContent {
+    width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.footer {
+    width: 185px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    font-size: small;
+    color: lightgray;
+    clear: both;
+}
+
+.metadata {
+    margin-left: 108px;
+}
