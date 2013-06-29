@@ -8,13 +8,12 @@ import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 import java.io.Serializable;
 
-public class StartPage extends WebPage implements Serializable {
-    private static Logger logger = Logger.getLogger(StartPage.class.getName());
+public class ContactPage extends WebPage implements Serializable {
+    private static Logger logger = Logger.getLogger(ContactPage.class.getName());
 
-    public StartPage(PageParameters parameters) {
+    public ContactPage(PageParameters parameters) {
         super(parameters);
-
-        logger.info("Display StartPage");
+        logger.info("Display ContactPage");
 
         add(new AjaxLink<String>("aboutPage") {
             @Override
@@ -23,10 +22,10 @@ public class StartPage extends WebPage implements Serializable {
             }
         });
 
-        add(new AjaxLink<String>("contactPage") {
+        add(new AjaxLink<String>("homePage") {
             @Override
             public void onClick(AjaxRequestTarget target) {
-                setResponsePage(ContactPage.class);
+                setResponsePage(StartPage.class);
             }
         });
     }

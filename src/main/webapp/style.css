@@ -1,79 +1,94 @@
 body {
-    background: white;
-    color: ghostwhite;
+    background-image: url("img/beer-wallpaper.jpg");
     font-family: monospace;
 }
 
-div.centre {
-    width: 1000px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-}
-
-img.top {
-    vertical-align: middle;
-}
-
-.applicationHeader {
-    padding-top: 25px;
+.header{
+    text-align: center;
     font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 
-.searchBox {
-    width: 350px;
-    height: 25px;
+.subHeader{
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
 }
 
-.movieWrapper {
-    width: 645px;
-    height: 361px;
-    float: left;
+.footer{
+    text-align: center;
+    font-size: 11px;
 }
 
-.movieInformationList {
-    width: 540px;
-}
-
-.floatLeft {
-    float: left;
-}
-
-.overflow {
-    overflow: auto;
-}
-
-.borderBottom {
-    border-bottom: 1px solid lightcyan
-}
-
-.pointer {
-    cursor: pointer;
-}
-
-.youTubeMovie:hover {
-    background: darkgray;
-}
-
-div.centreMainContent {
-    width: 1200px;
-    display: block;
+.menu{
     margin-left: auto;
     margin-right: auto;
+    width: 22%;
+    height: 1px;
+    opacity: 0.7;
 }
 
-div.footer {
-    width: 185px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40px;
-    font-size: small;
-    color: lightgray;
+.content{
+    margin: 20px;
+}
+
+.center {
     clear: both;
+    opacity: 0.7;
+    border-color: black;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: darkgreen;
+    background-color: lightgreen;
 }
 
-.metadata {
-    margin-left: 108px;
+li {
+    list-style: none;
+    float: left;
+    background:lightgreen;
+}
+
+ul {
+}
+
+li a {
+    display: block;
+    color: darkgreen;
+    text-decoration: none;
+    margin: 14px;
+    border-radius: 5px;
+}
+
+li a.active, li a:hover {
+    background-color: lightsalmon;
+    padding: 11px;
+    margin: 3px;
+}
+
+.floatLeft{
+  float: left;
+}
+
+.floatRight{
+    float: right;
+}
+
+.personDiv{
+    height: 300px;
+}
+
+.name{
+  font-weight: bold;
+}
+
+.title{
+   font-style: italic;
+}
+
+.description{
+    padding-top: 20px;
 }

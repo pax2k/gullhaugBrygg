@@ -8,18 +8,17 @@ import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 import java.io.Serializable;
 
-public class StartPage extends WebPage implements Serializable {
-    private static Logger logger = Logger.getLogger(StartPage.class.getName());
+public class AboutPage extends WebPage implements Serializable {
+    private static Logger logger = Logger.getLogger(AboutPage.class.getName());
 
-    public StartPage(PageParameters parameters) {
+    public AboutPage(PageParameters parameters) {
         super(parameters);
+        logger.info("Display about us");
 
-        logger.info("Display StartPage");
-
-        add(new AjaxLink<String>("aboutPage") {
+        add(new AjaxLink<String>("homePage") {
             @Override
             public void onClick(AjaxRequestTarget target) {
-                setResponsePage(AboutPage.class);
+                setResponsePage(StartPage.class);
             }
         });
 

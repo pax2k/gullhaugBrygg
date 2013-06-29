@@ -18,6 +18,7 @@ public class WicketApplication extends WebApplication {
 
     @Override
     public void init() {
-        super.init();
+        getRequestCycleSettings().setResponseRequestEncoding("UTF-8");
+        getMarkupSettings().setDefaultMarkupEncoding("UTF-8");
     }
 }
